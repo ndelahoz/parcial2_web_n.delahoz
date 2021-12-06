@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import roomLogo from "../assets/room.webp";
 import kitchenLogo from "../assets/kitchen.jpeg";
+import {FormattedMessage} from "react-intl";
 
 function Rooms(params) {
   const [rooms, setRooms] = useState([]);
@@ -55,7 +56,7 @@ function Rooms(params) {
 
   return (
     <div>
-      <h1> My rooms</h1>
+      <h1> <FormattedMessage id="myRooms" /></h1>
     <div className="row rooms">
       
       <div className="col-6 roomsCards">
@@ -76,8 +77,8 @@ function Rooms(params) {
               <tr>
             <td>#</td>
             <td>ID</td>
-            <td>Device</td>
-            <td>Value</td>
+            <td> <FormattedMessage id="device" /></td>
+            <td> <FormattedMessage id="value" /></td>
             </tr>
           </thead>
           <tbody>

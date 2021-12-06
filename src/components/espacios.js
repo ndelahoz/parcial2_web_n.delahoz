@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import houseLogo from "../assets/house.jpeg";
 import aptoLogo from "../assets/apto.jpeg";
 import Rooms from "./rooms";
+import {FormattedMessage} from "react-intl";
 
 
 function Espacios() {
@@ -41,7 +42,7 @@ function Espacios() {
   }
   return (
     <div>
-    <h1>My spaces</h1>
+    <h1> <FormattedMessage id="mySpaces" /></h1>
     <div className="espacios">
     {espacios!=null? espacios.map((espacio)=>{
         return(
