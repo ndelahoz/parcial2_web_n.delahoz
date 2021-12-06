@@ -46,11 +46,29 @@
    margin: 1rem;
 }
 
+.logo{
+  height: 10rem;
+  width: 10rem;
+}
+
 .roomsCards{
   display: flex;
-  margin: 1rem;
+  margin-left: 1rem;
 }
 .rooms{
   display: flex;
-  margin: 1rem;
+}
+
+
+table, th, td {
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.butRoom{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-width: 0.01rem;
 }
