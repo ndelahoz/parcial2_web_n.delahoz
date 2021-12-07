@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import roomLogo from "../assets/room.webp";
 import kitchenLogo from "../assets/kitchen.jpeg";
 import {FormattedMessage} from "react-intl";
+import Grafica from "./grafica";
 
 function Rooms(params) {
+  const data = [{ label: 'Apples', value: 10 }, { label: 'Oranges', value: 20 }]
   const [rooms, setRooms] = useState([]);
   const [roomActual, setRoomActual] = useState({"devices":[]});
 
@@ -97,6 +99,8 @@ function Rooms(params) {
         </table>
       </div>
     </div>
+    <h1><FormattedMessage id="stats" /></h1>
+    <Grafica data={rooms} outerRadius={300} innerRadius={0} />
     </div>
   );
 }
